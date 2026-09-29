@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Windysunny 的 AI 用量：Codex 剩余额度与 DeepSeek API 账户余额。">
+  <title>AI 用量 · Windysunny</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/usage.css">
+  <script src="/app.js" defer></script><script src="/usage.js" defer></script>
+</head>
+<body data-page="usage">
+  <a class="skip" href="#main">跳至主要内容</a><div id="shell"></div>
+  <main id="main" class="main usage-main">
+    <header class="page-head"><div><p class="eyebrow">MY AI WORKSPACE</p><h1>AI 用量<span class="heading-dot">.</span></h1><p class="muted">还有多少可用，一眼看清。</p></div><button class="button usage-refresh" id="usage-refresh" type="button">刷新数据 <span aria-hidden="true">↻</span></button></header>
+    <p class="usage-intro">Codex 显示使用额度的剩余比例；DeepSeek API 显示可用余额。两者的计量方式不同。</p>
+    <p class="usage-update" id="usage-update" role="status" aria-live="polite">正在读取数据…</p>
+    <section class="usage-section" aria-labelledby="codex-heading">
+      <div class="usage-section-head"><div><p class="eyebrow">01 / CODEX</p><h2 id="codex-heading">我的 Codex 额度</h2></div><span class="usage-source-tag">账户共享额度</span></div>
+      <div class="usage-codex-grid" id="codex-cards" aria-busy="true"></div>
+      <p class="usage-footnote" id="codex-source">正在读取最新同步的额度快照。</p>
+    </section>
+    <section class="usage-section" aria-labelledby="deepseek-heading">
+      <div class="usage-section-head"><div><p class="eyebrow">02 / DEEPSEEK</p><h2 id="deepseek-heading">我的 API 余额</h2></div><a class="text-link" href="https://platform.deepseek.com/" target="_blank" rel="noopener noreferrer">开放平台 <span aria-hidden="true">↗</span></a></div>
+      <div id="deepseek-cards" class="usage-balance-grid" aria-busy="true"></div>
+      <p class="usage-footnote" id="deepseek-source">正在读取账户余额。</p>
+    </section>
+    <details class="usage-explainer"><summary>如何读取这些数字</summary><div>
+      <p><strong>Codex：</strong>图中“剩余”是相应使用窗口的额度百分比，不是固定的 Token 数量，也不是某一次对话的上下文长度。不同任务的消耗可能不同。</p>
+      <p><strong>快照时间：</strong>Codex 数据来自最近一次已同步快照。点击刷新只会加载最新已同步的数据，不会直接读取你的 Codex 账号。快照超过 30 分钟会提醒；窗口重置时间已过时，需等待新快照。</p>
+      <p><strong>DeepSeek：</strong>环图展示赠送余额与充值余额的构成，不表示“已用／总量”。可用 Token 数受模型、输入输出长度及缓存命中等影响，因此这里保留官方返回的金额。</p>
+      <p>可按需刷新 DeepSeek 余额；页面会标注实际更新时间。灰色空环表示尚无可展示的数据，不代表额度为零。</p>
+      <p><a class="text-link" href="https://learn.chatgpt.com/docs/pricing" target="_blank" rel="noopener noreferrer">Codex 官方额度说明 ↗</a> · <a class="text-link" href="https://api-docs.deepseek.com/api/get-user-balance/" target="_blank" rel="noopener noreferrer">DeepSeek 官方余额说明 ↗</a></p>
+    </div></details>
+    <noscript><p class="no-js">请启用 JavaScript 以读取用量数据。你也可以在 Codex 和 DeepSeek 开放平台查看账户额度。</p></noscript>
+    <footer class="page-footer"><span>金正煊 · Windysunny</span><span>清楚地记录，安心地使用</span></footer>
+  </main><div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
