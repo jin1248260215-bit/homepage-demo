@@ -5,12 +5,13 @@ const paths = {
  assignments:'<path d="M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M3 9h18"/>',
  markets:'<path d="M3 3v18h18M6 15l5-5 4 3 6-8"/><path d="M17 5h4v4"/>',
  calendar:'<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18M8 15h2m4 0h2"/>',
+ usage:'<path d="M21 12a9 9 0 1 1-9-9v9Z"/><path d="M15 3.5V9h5.5A9 9 0 0 0 15 3.5Z"/>',
  plus:'<path d="M12 5v14M5 12h14"/>', close:'<path d="m6 6 12 12M6 18 18 6"/>', left:'<path d="m15 6-6 6 6 6"/>', right:'<path d="m9 6 6 6-6 6"/>', menu:'<path d="M4 6h16M4 12h16M4 18h16"/>', check:'<path d="m5 12 4 4L19 6"/>', edit:'<path d="m16 3 5 5-12 12H4v-5ZM13 6l5 5"/>', trash:'<path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/>', globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18"/>'
 };
 const icon=(name,size=20)=>`<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]||paths.home}</svg>`;
 const escapeHtml=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const page=document.body.dataset.page;
-const navItems=[['home','/','首页'],['assignments','/assignments/','作业仓库'],['about','/about/','个人简介'],['markets','/markets/','金融市场'],['calendar','/calendar/','个人日历']];
+const navItems=[['home','/','首页'],['assignments','/assignments/','作业仓库'],['about','/about/','个人简介'],['markets','/markets/','金融市场'],['calendar','/calendar/','个人日历'],['usage','/usage/','AI 用量']];
 document.querySelectorAll('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon,25));
 document.querySelector('#shell').innerHTML=`<header class="mobile-bar"><a class="mobile-brand" href="/"><span class="brand-mark">W.</span>Windysunny</a><button type="button" class="menu-button" aria-label="打开导航" aria-controls="sidebar" aria-expanded="false">${icon('menu')}</button></header><aside class="sidebar" id="sidebar"><a href="/" class="brand"><span class="brand-mark">W.</span><span><span class="brand-name">Windysunny</span><br><span class="brand-caption">PERSONAL SPACE</span></span></a><p class="nav-label">我的空间 / SPACE</p><nav class="nav" aria-label="主导航">${navItems.map(([id,url,label])=>`<a href="${url}" ${id===page?'class="active" aria-current="page"':''}>${icon(id)}${label}</a>`).join('')}</nav><div class="sidebar-bottom"><a class="person" href="/about/"><span class="avatar">JZ</span><span><strong>金正煊</strong><small>@Windysunny</small></span></a><p class="sidebar-note">一处空间，安放好奇与日常。</p></div></aside>`;
 document.querySelector('.menu-button').addEventListener('click',event=>{const button=event.currentTarget;const open=document.querySelector('#sidebar').classList.toggle('open');button.setAttribute('aria-expanded',String(open));button.setAttribute('aria-label',open?'关闭导航':'打开导航');});
