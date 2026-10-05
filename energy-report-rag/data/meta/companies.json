@@ -1,0 +1,17 @@
+[
+  {"code": "600900", "cn": "长江电力",   "sector": "电力",     "column": "sse",  "searchkey": "长江电力"},
+  {"code": "600011", "cn": "华能国际",   "sector": "电力",     "column": "sse",  "searchkey": "华能国际"},
+  {"code": "600795", "cn": "国电电力",   "sector": "电力",     "column": "sse",  "searchkey": "国电电力"},
+  {"code": "600905", "cn": "三峡能源",   "sector": "电力",     "column": "sse",  "searchkey": "三峡能源"},
+  {"code": "601985", "cn": "中国核电",   "sector": "电力",     "column": "sse",  "searchkey": "中国核电"},
+  {"code": "600023", "cn": "浙能电力",   "sector": "电力",     "column": "sse",  "searchkey": "浙能电力"},
+  {"code": "601088", "cn": "中国神华",   "sector": "煤炭",     "column": "sse",  "searchkey": "中国神华"},
+  {"code": "601225", "cn": "陕西煤业",   "sector": "煤炭",     "column": "sse",  "searchkey": "陕西煤业"},
+  {"code": "601898", "cn": "中煤能源",   "sector": "煤炭",     "column": "sse",  "searchkey": "中煤能源"},
+  {"code": "601857", "cn": "中国石油",   "sector": "石油石化", "column": "sse",  "searchkey": "中国石油"},
+  {"code": "600028", "cn": "中国石化",   "sector": "石油石化", "column": "sse",  "searchkey": "中国石化"},
+  {"code": "600938", "cn": "中国海油",   "sector": "石油石化", "column": "sse",  "searchkey": "中国海油"},
+  {"code": "601012", "cn": "隆基绿能",   "sector": "新能源制造", "column": "sse",  "searchkey": "隆基绿能"},
+  {"code": "300750", "cn": "宁德时代",   "sector": "新能源制造", "column": "szse", "searchkey": "宁德时代"},
+  {"code": "300274", "cn": "阳光电源",   "sector": "新能源制造", "column": "szse", "searchkey": "阳光电源"}
+]
