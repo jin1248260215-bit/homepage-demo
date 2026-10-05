@@ -1,0 +1,10 @@
+{"qid": 1, "type": "单公司事实", "question": "中国神华2025年商品煤产量和煤炭销售量分别是多少？", "gold_companies": ["中国神华"], "evidence_keywords": ["商品煤产量", "煤炭销量", "销售量"], "gold_answer": null}
+{"qid": 2, "type": "单公司表格数值", "question": "长江电力2025年营业总收入和归属于母公司股东的净利润分别是多少？", "gold_companies": ["长江电力"], "evidence_keywords": ["营业总收入", "归属于母公司股东的净利润", "归属于上市公司股东的净利润"], "gold_answer": null}
+{"qid": 3, "type": "单公司事实", "question": "宁德时代2025年研发费用是多少？研发人员有多少人？", "gold_companies": ["宁德时代"], "evidence_keywords": ["研发费用", "研发人员"], "gold_answer": null}
+{"qid": 4, "type": "单公司计算", "question": "中国石油2025年的销售费用是多少？销售费用率是多少？", "gold_companies": ["中国石油"], "evidence_keywords": ["销售费用", "营业总收入", "营业收入"], "gold_answer": null}
+{"qid": 5, "type": "单公司事实", "question": "隆基绿能2025年归属于母公司股东的净利润是多少？报告中说明的亏损原因是什么？", "gold_companies": ["隆基绿能"], "evidence_keywords": ["归属于母公司股东的净利润", "亏损", "减值"], "gold_answer": null}
+{"qid": 6, "type": "单公司事实", "question": "华能国际2025年末可控发电装机容量是多少？全年发电量是多少？", "gold_companies": ["华能国际"], "evidence_keywords": ["装机容量", "发电量"], "gold_answer": null}
+{"qid": 7, "type": "单公司事实", "question": "中国海油2025年桶油主要成本是多少？同比变化如何？", "gold_companies": ["中国海油"], "evidence_keywords": ["桶油主要成本", "桶油成本"], "gold_answer": null}
+{"qid": 8, "type": "单公司事实", "question": "阳光电源2025年海外收入占营业收入的比重是多少？", "gold_companies": ["阳光电源"], "evidence_keywords": ["境外", "海外", "外销", "分地区"], "gold_answer": null}
+{"qid": 9, "type": "跨公司全景", "question": "中国神华、陕西煤业、中煤能源这三家煤炭公司2025年归属于母公司股东的净利润分别是多少？哪家最高？", "gold_companies": ["中国神华", "陕西煤业", "中煤能源"], "evidence_keywords": ["归属于母公司股东的净利润", "归属于上市公司股东的净利润"], "gold_answer": null}
+{"qid": 10, "type": "跨公司全景", "question": "这15家公司中，2025年归属于母公司股东的净利润同比下滑的有哪些？分别下滑多少？", "gold_companies": ["长江电力", "华能国际", "国电电力", "三峡能源", "中国核电", "浙能电力", "中国神华", "陕西煤业", "中煤能源", "中国石油", "中国石化", "中国海油", "隆基绿能", "宁德时代", "阳光电源"], "evidence_keywords": ["归属于母公司股东的净利润", "归属于上市公司股东的净利润"], "gold_answer": null}
