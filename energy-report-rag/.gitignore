@@ -1,0 +1,13 @@
+# 凭证绝不入库
+.env
+*.env
+
+# 大体积中间产物（靠 src/download.py / src/extract.py 复现）
+data/pdf/
+data/extracted/
+index/
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store

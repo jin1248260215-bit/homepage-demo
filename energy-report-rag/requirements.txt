@@ -1,0 +1,13 @@
+# 财报 RAG —— 依赖清单
+# 已装（无需重装）：numpy pandas scipy pymupdf requests lxml beautifulsoup4 tqdm
+numpy
+pandas
+pymupdf
+requests
+
+# 本方案新增
+jieba            # 中文分词（BM25）
+rank_bm25        # BM25 实现
+flask            # 问答页面
+pdfplumber       # 表格抽取（主方案）
+fastembed        # 向量嵌入（ONNX，自带 onnxruntime，不需要 torch）
